@@ -1,6 +1,6 @@
 <p align="center"><img src="logo.png" alt="ZephyCube" width="160"></p>
 
-# ZephyCube AntiCombat v1.1.1
+# ZephyCube AntiCombat v1.1.2
 
 Combat timer, anti combat log and PvP / PvE days. Stable Script API only (`@minecraft/server` 2.8.0, `@minecraft/server-ui` 2.0.0). No other pack needed. The anti combat log features follow "Anti Combat Log" by GamerDos (rewritten for this pack, no code copied).
 
@@ -9,7 +9,7 @@ Combat timer, anti combat log and PvP / PvE days. Stable Script API only (`@mine
 
 ## Install
 
-Download `ZephyCubeCombat-v1.1.1-BP.mcaddon` (behavior pack; this add-on has no resource pack) or `ZephyCubeCombat-v1.1.1.mcpack` from the Releases page and open it. Or install by hand: copy the `ZephyCubeCombat` folder into your world's `behavior_packs` folder and add its `uuid` and `version` (from `manifest.json`) to the world's `world_behavior_packs.json`. Needs `@minecraft/server` 2.8.0 and `@minecraft/server-ui` 2.0.0.
+Download `ZephyCubeAntiCombat-v1.1.2-BP.mcaddon` (behavior pack; this add-on has no resource pack) or `ZephyCubeAntiCombat-v1.1.2.mcpack` from the Releases page and open it. Or install by hand: copy the `ZephyCubeAntiCombat` folder into your world's `behavior_packs` folder and add its `uuid` and `version` (from `manifest.json`) to the world's `world_behavior_packs.json`. Needs `@minecraft/server` 2.8.0 and `@minecraft/server-ui` 2.0.0.
 
 ## How it works
 * Hitting or being hit by another player (damage that went through) puts both players in combat for N seconds (default 20). Every new hit restarts the timer. With `mobs` on, hostile mobs start combat too.

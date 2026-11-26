@@ -1,4 +1,4 @@
-# ZephyCube AntiCombat 1.1.1
+# ZephyCube AntiCombat 1.1.2
 
 Combat timer, anti combat log and PvP / PvE days. Stable Script API only (`@minecraft/server` 2.8.0, `@minecraft/server-ui` 2.0.0). No other pack needed. The anti combat log features follow "Anti Combat Log" by GamerDos (rewritten for this pack, no code copied).
 
