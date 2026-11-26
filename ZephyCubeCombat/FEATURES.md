@@ -1,4 +1,4 @@
-# ZephyCube Combat 1.1.0
+# ZephyCube AntiCombat 1.1.1
 
 Combat timer, anti combat log and PvP / PvE days. Stable Script API only (`@minecraft/server` 2.8.0, `@minecraft/server-ui` 2.0.0). No other pack needed. The anti combat log features follow "Anti Combat Log" by GamerDos (rewritten for this pack, no code copied).
 
@@ -21,7 +21,7 @@ Combat timer, anti combat log and PvP / PvE days. Stable Script API only (`@mine
 | `crystal_pvp` | on | End crystals and respawn anchors are allowed in combat. Off: no end crystals on obsidian or bedrock, no respawn anchors outside the Nether |
 | `potions` | on | Potions are allowed in combat. Off: drinking or throwing potions is cancelled |
 | `kill_logout` | on | A player who logs out while in combat is killed at once. If the player is already gone by then, they are killed when they next join (within 60 minutes) |
-| `drop_on_logout` | off | If a combat logger is already gone, their items and XP drop at the logout spot at once, and are taken from them when they join again (so nothing is doubled) |
+| `drop_on_logout` | off | If a combat logger is already gone, their items and XP drop at the logout spot at once, and are taken from them when they join again (so nothing is doubled). The dropped items carry the tag `zc:keep_drop`, so ZephyCube Log's `anti_crash_drop` keeps them |
 | `safezones` | on | Safezones: boxes where players cannot be hurt by players (unless already in combat, so nobody can run into one to escape a fight) and/or where non-staff cannot break or place blocks |
 | `item_blacklist` | on | Blacklisted items are removed from every player's inventory and armor once a second (not from staff). The list starts empty |
 | `pvp_days` | off | PvP / PvE days, see below |

@@ -5,7 +5,7 @@ import {
 } from "@minecraft/server";
 import { ActionFormData, ModalFormData, FormCancelationReason } from "@minecraft/server-ui";
 
-// ZephyCube Combat. Stable API only.
+// ZephyCube AntiCombat (formerly ZephyCube Combat). Stable API only.
 //  Combat tag: hitting or being hit by another player (damage that went through) puts both in combat for
 //  `seconds` seconds. While in combat the rules below apply. Logging out in combat is punished.
 //  Anti combat log features follow "Anti Combat Log" by GamerDos (rewritten, no code copied).
@@ -481,7 +481,8 @@ world.beforeEvents.playerLeave.subscribe(({ player }) => {
                 if (S.dropOnLogout && items.length) {
                     try {
                         const dim = world.getDimension(dimId);
-                        for (const it of items) dim.spawnItem(it, loc);
+                        // tagged so anti-dupe packs (ZephyCube Log anti_crash_drop) keep them
+                        for (const it of items) { const e = dim.spawnItem(it, loc); try { e?.addTag("zc:keep_drop"); } catch { } }
                         for (let i = 0; i < Math.min(100, level * 7); i++) dim.spawnEntity("minecraft:xp_orb", loc);
                         dropped = true;
                     } catch { }
